@@ -60,30 +60,46 @@ Returns:
 Example:
 
 ```lua
-local serialized = [[
-start table
-  stringIndex
-  name
+local serialized = [[start table
+stringIndex
+items
+tableValue
+  start table
+  numberIndex
+  1
   stringValue
-  test
-  stringIndex
-  id
-  numberValue
-  123
-  stringIndex
-  nested
-  tableValue
-    stringIndex
-    key
-    stringValue
-    value
-    stringIndex
-    count
-    numberValue
-    42
+  sword
+  numberIndex
+  2
+  stringValue
+  shield
+  numberIndex
+  3
+  stringValue
+  potion
   end table
-end table
-]]
+stringIndex
+stats
+tableValue
+  start table
+  stringIndex
+  health
+  numberValue
+  100
+  stringIndex
+  mana
+  numberValue
+  50
+  end table
+stringIndex
+level
+numberValue
+5
+stringIndex
+player
+stringValue
+hero
+end table]]
 
 local deserialized = SaveLoad.deserializeString(serialized)
 for key, value in pairs(deserialized) do
