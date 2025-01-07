@@ -103,7 +103,7 @@ stringValue
 hero
 end table]]
 
-local deserialized = SaveLoad.deserializeString(serialized)
+local deserialized = SafeSaveLoad.deserializeString(serialized)
 ```
 
 ```lua
@@ -121,7 +121,7 @@ local data = {
 }
 
 -- Serialize the table
-local serializedData = SaveLoad.serializeTable(data)
+local serializedData = SafeSaveLoad.serializeTable(data)
 print("Serialized Data:")
 print(serializedData)
 ```
