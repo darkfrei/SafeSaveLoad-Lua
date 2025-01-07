@@ -60,7 +60,6 @@ Returns:
 Example:
 
 ```lua
-Code kopieren
 local serialized = [[
 start table
   stringIndex
