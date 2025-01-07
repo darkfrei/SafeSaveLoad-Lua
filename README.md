@@ -1,9 +1,9 @@
-# SafeSaveLoad-Lua
+# SafeSaveLoad Lua
 lightweight utility for serializing and deserializing Lua tables
 
 
 # Description
-The SaveLoad module is a lightweight utility for serializing and deserializing Lua tables. It transforms Lua tables into a human-readable string format that can be stored or transmitted and then reconstructs the original table from this serialized string.
+The SafeSaveLoad module is a lightweight utility for serializing and deserializing Lua tables. It transforms Lua tables into a human-readable string format that can be stored or transmitted and then reconstructs the original table from this serialized string.
 
 This module is particularly useful for saving and loading data in Lua-based projects, such as game state management, configuration storage, or debugging complex data structures.
 
@@ -19,7 +19,7 @@ Share structured data between Lua scripts or applications.
 
 
 # How to Use
-The SaveLoad module provides two core functions for serializing Lua tables into a string format and deserializing them back into Lua tables. This is useful for saving and loading structured data such as configurations, game states, or any nested table structure.
+The SafeSaveLoad module provides two core functions for serializing Lua tables into a string format and deserializing them back into Lua tables. This is useful for saving and loading structured data such as configurations, game states, or any nested table structure.
 
 Functions
 serializeTable(tbl)
