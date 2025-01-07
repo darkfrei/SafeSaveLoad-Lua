@@ -60,6 +60,8 @@ Returns:
 Example:
 
 ```lua
+local SafeSaveLoad = require("SafeSaveLoad")
+
 local serialized = [[start table
 stringIndex
 items
@@ -105,7 +107,7 @@ local deserialized = SaveLoad.deserializeString(serialized)
 ```
 
 ```lua
-local SaveLoad = require("SaveLoad") -- Assuming SaveLoad is in your project's folder
+local SafeSaveLoad = require("SafeSaveLoad")
 
 -- Define a table to serialize
 local data = {
@@ -122,13 +124,6 @@ local data = {
 local serializedData = SaveLoad.serializeTable(data)
 print("Serialized Data:")
 print(serializedData)
-
--- Deserialize the string back into a table
-local deserializedData = SaveLoad.deserializeString(serializedData)
-print("Deserialized Data:")
-for key, value in pairs(deserializedData) do
-    print(key, value)
-end
 ```
 
 # Advantages
