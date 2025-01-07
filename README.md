@@ -102,12 +102,9 @@ hero
 end table]]
 
 local deserialized = SaveLoad.deserializeString(serialized)
-for key, value in pairs(deserialized) do
-    print(key, value)
-end
-Example Workflow
-lua
-Code kopieren
+```
+
+```lua
 local SaveLoad = require("SaveLoad") -- Assuming SaveLoad is in your project's folder
 
 -- Define a table to serialize
